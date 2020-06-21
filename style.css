@@ -1,0 +1,167 @@
+:root{
+    --ff-body: 'Raleway', sans-serif;
+   --clr-strong: hsl(243, 100%, 93%);
+   --clr-primary:hsl(229, 7%, 55%);
+   --clr-blocks: hsl(228, 56%, 26%);
+    --clr-icons-blocks:hsl(229, 57%, 11%);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    max-width: 375px;
+    font-size: 14px;
+    font-family: var(--ff-body);
+    
+    
+}
+
+body{
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+
+.button-group button {
+    padding: 0.8em 1.1em;
+    border-radius: 10px;
+    margin-right: 15px;
+    /* width: 3em;
+    height:  3em; */
+    background-color: var(--clr-icons-blocks);
+
+
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:left;
+    margin-top: 1.5em;
+    
+    
+}
+
+.progress{
+    padding:0.2em;
+    background-color: var(--clr-icons-blocks);
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+
+.progress-bar{
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%) );
+    border-radius: 30px;
+    height: 0.9em;
+    width: calc(815/1000*100%);
+
+}
+
+.progress-bar::before {
+    content:'0 GB';
+    position: absolute;
+    left:3.7em;
+    top: 410px;
+
+}
+.progress-bar::after {
+    content:'110 GB';
+    position: absolute;
+    right:3.7em;
+    top: 410px;
+
+}
+
+
+.circle::before{
+    content:'';
+    position: absolute;
+    width:0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: white;
+    left: 17.8em;
+    margin-top:0.8px;
+}
+
+
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+    width: 23em;
+    
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 13em;
+    background-color: var(--clr-blocks);
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+    padding: 2em;
+    margin-top: 15vh;
+    
+   
+
+}
+
+.storage-info {
+    background-color: var(--clr-blocks);
+    color: var(--clr-strong);
+    font-family: var(--ff-body);
+    text-align: center;
+    height: 11em;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding-top: 1em;
+    
+}
+
+
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: var(--clr-icons-blocks);
+    width: 45%;
+    margin: 0 auto;
+    padding: 0.8em;
+    margin-top: -30px;
+    font-family: var(--ff-body);
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.left strong {
+    
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+
+footer {
+    position: relative;
+    bottom: -11em;
+}
