@@ -56,8 +56,6 @@ body{
     
 }
 
-
-
 .progress-bar{
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%) );
     position: relative;
@@ -85,11 +83,7 @@ body{
 
 }
 
-.progress-bar {
-    display: flex;
-    flex-direction: column;
-  
-}
+
 
 
 
@@ -113,7 +107,6 @@ body{
 .main {
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 23em;
     margin-right: 1em;
     margin-left: 1em;
@@ -167,20 +160,19 @@ body{
 }
 
 .left strong {
-    /* padding: 0.2em; */
-    /* margin-right: 0.3em; */
+    margin-right: 8px;
+    margin-left: 10px;
     font-weight: 700;
     font-size: 35px;
-    /* margin: 0 auto; */
+
     
 }
 
 
 
-
 footer {
-    position: absolute;
-    left:0;
+    position: relative;
+    bottom: 0;
     
     
 }
@@ -243,7 +235,7 @@ footer {
     .progress-bar::after {
         content:'1000 GB';
         position: relative;
-        left: 26.4em;
+        left: 25em;
         top: 0.6em;
         font-weight: 700;
         
@@ -256,6 +248,14 @@ footer {
         top:0.1em;
         
     }
+
+    .callout {
+        border-bottom: 1.9rem solid transparent;
+        border-right: 1.56rem solid white;
+        position: relative;
+        bottom: 0.625rem;
+        left:-4.85em;
+    }
     
 
     .left  p {
@@ -265,6 +265,12 @@ footer {
         margin-top: 7px;   
         margin-left: -186px;     
     }
+
+    footer {
+        position: relative;
+        bottom: -3em;
+    }
+
 
 
 }
