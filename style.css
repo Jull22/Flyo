@@ -25,6 +25,12 @@ body{
   
 }
 
+h2{
+    font-size: 14px;
+    font-family: var(--ff-body);
+    font-weight: 300;  
+}
+
 
 .button-group button {
     padding: 1.6em 1.6em;
@@ -262,7 +268,7 @@ footer {
         
     }
 
-    .storage-info p {
+    .storage-info h2 {
         padding-left: 3.9em;
     }
 
